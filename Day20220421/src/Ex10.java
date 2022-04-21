@@ -10,14 +10,14 @@ public class Ex10 {
 		
 //		nArr[i]= rand.nextInt(10); //0~9사이의 값
 		
-		Random rand = new Random(); //숫자 7의미??
+		Random rand = new Random(); 
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("배열 개수 입력 >>");
 		int n = sc.nextInt();
 		int[] nArr = new int[n];
 		
-		nArr[0] =rand.nextInt(10);
+		nArr[0] =rand.nextInt(10)+1;
 		
 		for (int i=0;i<nArr.length;i++) { 
 			int j;
@@ -25,12 +25,14 @@ public class Ex10 {
 				j = 0; 
 				nArr[i]= rand.nextInt(10)+1; //1~10사이의 값
 				
-				for(; j<i;j++)
+				for(; j<i;j++) 
 					if (nArr[j]==nArr[i])
 						break;
 				} while (j<i);
-			}
-	
+			
+			
+		}	
+		
 		System.out.println(Arrays.toString(nArr));
 	}
 
