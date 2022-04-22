@@ -15,17 +15,14 @@ public class LunchMental {
 			int x = (int)(Math.random()*100)+1;
 			int y = (int)(Math.random()*100)+1;
 			int z = (int)(Math.random()*100)+1;
-			
 			int num = (int)(Math.random()*4);
-			
 			int answer = 0;
 			
 			switch(num) {
 			case 0 : answer =x+y+z; break;
 			case 1 : answer =x+y-z; break;
 			case 2 : answer =x-y+z; break;
-			case 3 : answer =x-y-z; break;
-				
+			default : answer =x-y-z; break;
 			}
 			
 			while (true) {
@@ -41,9 +38,8 @@ public class LunchMental {
 			System.out.println("정답입니다.");
 			System.out.println("계속(1),중지(0) : ");
 			retry = sc.nextInt();
-			
+			sc.nextLine();
 		}while (retry ==1);
-	
 		System.out.println("프로그램 종료!!");
 	}
 
