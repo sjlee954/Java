@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex01_dog {
 
 	public static void main(String[] args) throws IOException {
 		
