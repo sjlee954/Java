@@ -2,7 +2,7 @@
 public class Ex09 {
 
 	public static void main(String[] args) {
-		 boolean flag = gugudan();
+	     boolean flag = gugudan();
 	      
 	      if (flag == true)
 	         System.out.println("출력 성공");
@@ -23,4 +23,5 @@ public class Ex09 {
 	      
 	      return flag;
 	}
+
 }

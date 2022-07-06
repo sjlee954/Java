@@ -1,17 +1,16 @@
 import java.util.Scanner;
 
-public class Ex07 { //정수 입력받아서 -> 90이상 A, 80이상 B, 70C, 60D, 60이하F.
+public class Ex07 {
 
 	public static void main(String[] args) {
-		System.out.print("점수를 입력하세요.");
+		// 정수 입력받아서 -> 90이상 A, 80이상 B, 70C, 60D, 60이하F.
 		
-		Scanner scanner = new Scanner(System.in);
-		String score = scanner.nextLine();
+		Scanner sc = new Scanner(System.in);
 		
-		int num = Integer.parseInt(score);
+		int num = sc.nextInt();
 		
-		if(num >=90 && num <=100)
-			System.out.println("A학점입니다.");
+		if (num >= 90 && num <= 100)   
+			System.out.println("A학점입니다");
 		
 		else if (num >= 80 && num <90)
 			System.out.println("B학점입니다.");
@@ -25,7 +24,7 @@ public class Ex07 { //정수 입력받아서 -> 90이상 A, 80이상 B, 70C, 60D, 60이하F.
 		else if (num <= 50 && num >= 0)
 			System.out.println("F학점입니다.");
 		
-		scanner.close();
+		sc.close();
 	}
 
 }

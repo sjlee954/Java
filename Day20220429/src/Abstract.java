@@ -1,3 +1,4 @@
+
 public class Abstract {
 
 	public static void main(String[] args) {
@@ -13,20 +14,20 @@ public class Abstract {
 }
 
 abstract class Product {
-	int price; //ì œí’ˆì˜ ê°€ê²©
+	int price; //Á¦Ç°ÀÇ °¡°İ
 	Product(int price) {
 		this.price = price;
 	}
 	void test() {
 		System.out.println("Product");
 	}
-	abstract void func(); //ì¶”ìƒë©”ì„œë“œ 
+	abstract void func(); //Ãß»ó¸Ş¼­µå 
 }
 
 class Tvv extends Product {
-	Tvv() {super(100); } //í‹°ë¹„ê°€ê²©
+	Tvv() {super(100); } //Æ¼ºñ°¡°İ
 	
-	public String toString() { return "Tv"; } // ê°€ê²©ê³¼ "Tv"ë¥¼ ê°€ì§€ê³  ìˆìŒ.
+	public String toString() { return "Tv"; } // °¡°İ°ú "Tv"¸¦ °¡Áö°í ÀÖÀ½.
 	                                          // 	System.out.println(p.price); = 100 
 	                                          //	System.out.println(p.toString()); = Tv
 
@@ -38,7 +39,7 @@ class Tvv extends Product {
 	}
 }
 class Computer extends Product {
-	Computer() {super(200); } //ì»´í“¨í„°ê°€ê²©
+	Computer() {super(200); } //ÄÄÇ»ÅÍ°¡°İ
 	
 	public String toString() { return "Computer"; }
 

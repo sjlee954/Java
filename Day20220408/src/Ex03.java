@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class Ex03 { //p.152 4-8
+public class Ex03 {  //p150예제 if문으로 바꾼거 선생님이 풀어주신거
 
 	public static void main(String[] args) {
+		System.out.print("가위(1),바위(2),보(3)중 하나를 입력하세요.>");
 		
-		System.out.printf("당신의 주민번호를 입력하세요.(011231-1111222)>");
 		Scanner scanner = new Scanner(System.in);
-		String regNo = scanner.nextLine();
+		int user = scanner.nextInt(); 
+		int com = (int)(Math.random() *3) + 1;  
+                       //0과1사이의 난수가 발생
 		
-		char gender = regNo.charAt(7);
+		System.out.println("당신은" + user + "입니다.");
+		System.out.println("컴은" + com + "입니다.");
+		int result = user-com;
 		
-		switch(gender) {
-			case '1' : case '3' :
-				System.out.println("당신은 남자입니다.");
-				break;
-			case '2' : case '4' :
-				System.out.println("당신은 여자입니다.");
-				break;
-			default : 
-				System.out.println("유효하지 않은 주민등록번호입니다.");
-		} //switch end
+		if(result == 2 || result ==-1) 
+			System.out.println("당신이 졌습니다.");
+		else if (result == 1 || result == -2) 
+			System.out.println("당신이 이겼습니다.");
+		else 
+			System.out.println("비겼습니다.");
 		
 		scanner.close();
 	}

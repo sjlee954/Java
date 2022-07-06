@@ -11,11 +11,11 @@ public class CarTest {
 //		se.setColor("Red");
 //		System.out.println(se.getColor());
 //		se.setPassenger(4);
-//		System.out.println(se.getPassenger()+"ëª…");
+//		System.out.println(se.getPassenger()+"¸í");
 		
-		Sedan se2 = new Sedan("blue",2,4,3);
+//		Sedan se2 = new Sedan("blue",2,4,3);
 		
-		SportsCar sp = new SportsCar();
+//		SportsCar sp = new SportsCar();
 //		sp.setColor("red")
 //		System.out.println(sp.getColor);
 		
@@ -23,7 +23,7 @@ public class CarTest {
 		sp2.run();
 		
 		System.out.println(sp2.getColor()+","+sp2.getPassenger()+","+sp2.getTire()+","+
-		                   sp2.getSeat()+","+sp2.horsepower); //ì°ìœ¼ë ¤ë©´ getterì‚¬ìš©í•  ìˆ˜ ë°–ì— ì—†ë‹¤.
+		                   sp2.getSeat()+","+sp2.horsepower); //ÂïÀ¸·Á¸é getter»ç¿ëÇÒ ¼ö ¹Û¿¡ ¾ø´Ù.
 	
 		SportsCar sp3 = new SportsCar();
 	}
@@ -40,17 +40,17 @@ class Car {
 	private int seat;
 	
 	void run() {
-		System.out.println("ë‹¬ë ¤!!!");
+		System.out.println("´Ş·Á!!!");
 	}
 	void stop() {}
 	
 	
 	
 	public Car() {
-		System.out.println("Car()ìƒì„±ì");
+		System.out.println("Car()»ı¼ºÀÚ");
 	}
 	public Car(int passenger,int tire, int seat) {
-		System.out.println("Car()ìƒì„±ì");
+		System.out.println("Car()»ı¼ºÀÚ");
 		this.passenger = passenger;
 		this.tire = tire;
 		this.seat = seat;
@@ -62,12 +62,12 @@ class Sedan extends Car {
 	private String color;
 	
 	public Sedan() {
-		System.out.println("Sedan()ìƒì„±ì");
+		System.out.println("Sedan()»ı¼ºÀÚ");
 
 	}
 	public Sedan(String color,int passenger, int tire, int seat) {
 		super(passenger,tire,seat);
-		System.out.println("Sedan()ìƒì„±ì");
+		System.out.println("Sedan()»ı¼ºÀÚ");
 		this.color = color;
 	}
 
@@ -84,16 +84,15 @@ class SportsCar extends Sedan {
 	int horsepower;
 	
 	public SportsCar() {
-		System.out.println("Sports()ìƒì„±ì");
+		System.out.println("Sports()»ı¼ºÀÚ");
 
 	}
-	
 	public SportsCar(String color,int passenger, int tire, int seat,int horsepower) {
 		super(color,passenger,tire,seat);
 		this.horsepower = horsepower;
 	}
-	void run() { //ì˜¤ë²„ë¼ì´ë”©
-		System.out.println("ìŠ¤í¬ì¸ ì¹´ ë‹¬ë ¤!!!"); //ì§€ì—­ë³€ìˆ˜ì™€ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ê°€ ìˆì„ë•Œ ì§€ì—­ë³€ìˆ˜ê°€ ìš°ì„ 
+	void run() { //¿À¹ö¶óÀÌµù
+		System.out.println("½ºÆ÷Ã÷Ä« ´Ş·Á!!!"); //Áö¿ªº¯¼ö¿Í ÀÎ½ºÅÏ½ºº¯¼ö°¡ ÀÖÀ»¶§ Áö¿ªº¯¼ö°¡ ¿ì¼±
 	}
 }
 

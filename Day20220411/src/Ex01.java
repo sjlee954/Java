@@ -1,5 +1,5 @@
 
-public class Ex01 {
+public class Ex01 { //p.168 4-23
 
 	public static void main(String[] args) {
 		int i = 5;
@@ -9,10 +9,8 @@ public class Ex01 {
 		}
 	} //main¿« ≥°
 
-
+}
 
 // while (i !=0) {
 // 	i--;
 //System.out.println(i + "- I can do it.");
-	}
-

@@ -1,5 +1,5 @@
 
-public class Ex06 {
+public class Ex06 { //p.174 4-29
 
 	public static void main(String[] args) {
 		for (int i =1;i<=100; i++) {

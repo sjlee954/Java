@@ -1,5 +1,5 @@
 
-public class Ex11 {
+public class Ex11 { //설정한 범위내에 숫자 다 더하기 바로튀어나와야함
 
 	public static void main(String[] args) {
 		// 반복문 : 

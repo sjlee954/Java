@@ -30,6 +30,7 @@ public class Ex10 {
 		//5¹ø
 		char ch4 = 'a';
 		System.out.println((ch4 >='A' && ch4 <='Z') || (ch4 >= 'a' && ch4<='z'));
+		
 	}
 
 }

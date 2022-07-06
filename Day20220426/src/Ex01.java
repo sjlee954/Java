@@ -10,7 +10,7 @@ public class Ex01 {
 		System.out.println(c2.num);
 		System.out.println(c3.num);
 		
-		//ì‹±ê¸€í†¤ ê°ì²´ìƒì„±ì€ í•˜ë‚˜ë§Œ ë¨.
+		//½Ì±ÛÅæ °´Ã¼»ı¼ºÀº ÇÏ³ª¸¸ µÊ.
 		Car2 c10 = Car2.getInstance();
 		c10.num++;
 		System.out.println(c10.num);
@@ -29,16 +29,16 @@ class Car {
 }
 
 class Car2 {
-	private static Car2 car2 = null; //í´ë˜ìŠ¤ë³€ìˆ˜ ë‘¥ ë– ìˆìŒ.
+	private static Car2 car2 = null; //Å¬·¡½ºº¯¼ö µÕ ¶°ÀÖÀ½.
 	
-	int num = 100; //ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜
+	int num = 100; //ÀÎ½ºÅÏ½ºº¯¼ö
 	
-	private Car2() {} //ê¸°ë³¸ìƒì„±ì
+	private Car2() {} //±âº»»ı¼ºÀÚ
 	
-	public static Car2 getInstance() { //í´ë˜ìŠ¤ë©”ì†Œë“œ :ê°ì²´ìƒì„±ì „ì— ë©”ì†Œë“œí˜¸ì¶œ ê°€ëŠ¥
+	public static Car2 getInstance() { //Å¬·¡½º¸Ş¼Òµå :°´Ã¼»ı¼ºÀü¿¡ ¸Ş¼ÒµåÈ£Ãâ °¡´É
 		if(car2 == null)
-			car2 = new Car2();  //ìƒì„±ì í˜¸ì¶œ
-		return car2; //c10 c11 ë¡œ ê°’ì„ ë³´ëƒ„ ê·¸ë˜ì„œ íƒ€ì…ì´ ì¼ì¹˜í•´ì•¼í•˜ê¸° ë•Œë¬¸ì— c10 ì•ì— Car2ë¥¼ ë¶™ì„.
+			car2 = new Car2();  //»ı¼ºÀÚ È£Ãâ
+		return car2; //c10 c11 ·Î °ªÀ» º¸³¿ ±×·¡¼­ Å¸ÀÔÀÌ ÀÏÄ¡ÇØ¾ßÇÏ±â ¶§¹®¿¡ c10 ¾Õ¿¡ Car2¸¦ ºÙÀÓ.
 	}
 		
 	

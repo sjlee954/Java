@@ -4,12 +4,12 @@ class MemberCall {
 	static int cv = 20;
 	
 	int iv2 = cv;
-	//static int cv2 = iv; //ì—ëŸ¬. í´ë˜ìŠ¤ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ.
-	static int cv2 = new MemberCall().iv;   //ì´ì²˜ëŸ¼ ìƒì„±í•´ì•¼ ì‚¬ìš©ê°€ëŠ¥.
+	//static int cv2 = iv; //¿¡·¯. Å¬·¡½ºº¯¼ö´Â ÀÎ½ºÅÏ½º º¯¼ö¸¦ »ç¿ëÇÒ ¼ö ¾øÀ½.
+	static int cv2 = new MemberCall().iv;   //ÀÌÃ³·³ »ı¼ºÇØ¾ß »ç¿ë°¡´É.
 	
 	static void staticMethod() {
 		System.out.println(cv);
-//		System.out.println(iv); ì—ëŸ¬. í´ë˜ìŠ¤ ë©”ì†Œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ ì‚¬ìš©ë¶ˆê°€
+//		System.out.println(iv); ¿¡·¯. Å¬·¡½º ¸Ş¼Òµå¿¡¼­´Â ÀÎ½ºÅÏ½ºº¯¼ö »ç¿ëºÒ°¡
 		MemberCall c = new MemberCall();
 		System.out.println(c.iv);
 	}
@@ -22,7 +22,7 @@ class MemberCall {
 	
 	static void staticMethod2() {
 		staticMethod();
-//		instanceMethod(); ì—ëŸ¬.
+//		instanceMethod(); ¿¡·¯.
 		MemberCall c = new MemberCall();
 		c.instanceMethod1();
 	}

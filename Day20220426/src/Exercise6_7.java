@@ -4,15 +4,15 @@ import lombok.Setter;
 class Exercise6_7 {
 	public static void main(String[] args) {
 		
-		Student1 s = new Student1("ì†í¥ë¯¼",1,10,90,100,60); //ìƒì„±ì í˜¸ì¶œ >>ë””í´ë“œìƒì„±ì
+		Student1 s = new Student1("¼ÕÈï¹Î",1,10,90,100,60); //»ı¼ºÀÚ È£Ãâ >>µğÆúµå»ı¼ºÀÚ
 		System.out.println(s.getName());
 		System.out.println(s.getTotal());
 		
-		Student1 s2 = new Student1("ë°•ì§€ì„±",2,15,50,100,60); //ìƒì„±ì í˜¸ì¶œ >>ë””í´ë“œìƒì„±ì
+		Student1 s2 = new Student1("¹ÚÁö¼º",2,15,50,100,60); //»ı¼ºÀÚ È£Ãâ >>µğÆúµå»ı¼ºÀÚ
 		System.out.println(s2.getName());
 		System.out.println(s2.getTotal());
 		
-		Student1 s3 = new Student1("ë©”ì‹œ",2,15); //ìƒì„±ì í˜¸ì¶œ >>ë””í´ë“œìƒì„±ì
+		Student1 s3 = new Student1("¸Ş½Ã",2,15); //»ı¼ºÀÚ È£Ãâ >>µğÆúµå»ı¼ºÀÚ
 		System.out.println(s3.getName());
 		System.out.println(s3.getTotal());
 		
@@ -21,7 +21,7 @@ class Exercise6_7 {
 }
 
 
-@Getter //@ ==> ì–´ë…¸í…Œì´ì…˜
+@Getter //@ ==> ¾î³ëÅ×ÀÌ¼Ç
 @Setter
 
 class Student1 {
@@ -33,7 +33,7 @@ class Student1 {
 	private int eng;
 	private int math;
 	
-	//í•¨ìˆ˜ ì˜¤ë²„ë¡œë”© : ë§¤ê°œë³€ìˆ˜ ê°œìˆ˜ê°€ ë‹¤ë¥¸ê²ƒì„ ì˜¤ë²„ë¡œë”©ì´ë¼ê³  í•¨.
+	//ÇÔ¼ö ¿À¹ö·Îµù : ¸Å°³º¯¼ö °³¼ö°¡ ´Ù¸¥°ÍÀ» ¿À¹ö·ÎµùÀÌ¶ó°í ÇÔ.
 	public Student1(String name, int ban, int no, int kor, int eng, int math) {
 		this.name = name;
 		this.ban = ban;
@@ -43,7 +43,7 @@ class Student1 {
 		this.math = math;
 		
 	}
-	//í•¨ìˆ˜ ì˜¤ë²„ë¡œë”© : ë§¤ê°œë³€ìˆ˜ ê°œìˆ˜ê°€ ë‹¤ë¥¸ê²ƒì„ ì˜¤ë²„ë¡œë”©ì´ë¼ê³  í•¨.
+	//ÇÔ¼ö ¿À¹ö·Îµù : ¸Å°³º¯¼ö °³¼ö°¡ ´Ù¸¥°ÍÀ» ¿À¹ö·ÎµùÀÌ¶ó°í ÇÔ.
 	public Student1(String name, int ban, int no) {
 		this.name = name;
 		this.ban = ban;

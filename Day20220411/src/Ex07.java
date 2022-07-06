@@ -1,7 +1,8 @@
 
-public class Ex07 {
+public class Ex07 { //p.174 4-29예제를 for문으로 바꾼것
 
 	public static void main(String[] args) {
+		
 		for (int i =1;i<=100; i++) {
 			System.out.printf("i=%d",i);
 			
@@ -17,5 +18,4 @@ public class Ex07 {
 			System.out.println();
 		}
 	}
-
 }

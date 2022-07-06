@@ -10,7 +10,7 @@ public class FactorialTest {
 		if ( n==1) 
 			return 1;
 		
-		return n * factorials(n-1); //ë©”ì„œë“œ ìì‹ ì„ í˜¸ì¶œí•œë‹¤
+		return n * factorials(n-1); //¸Ş¼­µå ÀÚ½ÅÀ» È£ÃâÇÑ´Ù
 	}
 		
 }

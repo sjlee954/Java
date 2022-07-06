@@ -1,5 +1,5 @@
 
-public class Ex10 {
+public class Ex10 { //175 4-30
 
 	public static void main(String[] args) {
 		int sum = 0;

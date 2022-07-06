@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex10 { //p.145 4-5
+public class Ex10 {   //p.145  4-5 
 
 	public static void main(String[] args) {
 		int score = 0;

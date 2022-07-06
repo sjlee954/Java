@@ -1,5 +1,5 @@
 
-public class TvTest2 {
+public class Tvtest2 {
 
 	public static void main(String[] args) {
 		Tv2[] tvArr = new Tv2[3];

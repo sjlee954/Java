@@ -6,16 +6,16 @@ class Exercise6_8 {
 		
 		Student2 s = new Student2();
 		
-		s.setName("í™ê¸¸ë™");
+		s.setName("È«±æµ¿");
 		s.setBan(1);
 		s.setNo(1);
 		s.setKor(100);
 		s.setEng(60);
 		s.setMath(76);
 		
-		System.out.println("ì´ë¦„ : "+s.getName());
-		System.out.println("ì´ì  : "+s.getTotal());
-		System.out.println("í‰ê·  : "+s.getAverage());
+		System.out.println("ÀÌ¸§ : "+s.getName());
+		System.out.println("ÃÑÁ¡ : "+s.getTotal());
+		System.out.println("Æò±Õ : "+s.getAverage());
 	}
 
 }

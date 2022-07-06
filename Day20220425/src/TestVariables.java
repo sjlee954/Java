@@ -5,7 +5,7 @@ public class TestVariables {
 		Variables var = new Variables();
 		var.iv++;
 		
-		Variables.cv++; //í´ë˜ìŠ¤ ë³€ìˆ˜
+		Variables.cv++; //Å¬·¡½º º¯¼ö
 		
 		System.out.println("var : "+var.iv);
 		System.out.println("var.cv: "+var.cv);
@@ -29,17 +29,17 @@ public class TestVariables {
 		System.out.println("--------------------");
 		
 		Variables var4 =  new Variables();
-		System.out.println("var4 : "+var4.iv); //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„±í›„ ì‚¬ìš©í•´ì•¼í•¨.
+		System.out.println("var4 : "+var4.iv); //ÀÎ½ºÅÏ½º º¯¼ö´Â °´Ã¼ »ı¼ºÈÄ »ç¿ëÇØ¾ßÇÔ.
 		
 	}
 }
 
 class Variables {
-	int iv; //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜, ë©¤ë²„ë³€ìˆ˜
-	static int cv; //í´ë˜ìŠ¤ë³€ìˆ˜, ì •ì ë³€ìˆ˜, ê³µìœ ë³€ìˆ˜
+	int iv; //ÀÎ½ºÅÏ½º º¯¼ö, ¸â¹öº¯¼ö
+	static int cv; //Å¬·¡½ºº¯¼ö, Á¤Àûº¯¼ö, °øÀ¯º¯¼ö
 	
 	void method() {
-		int lv=0; //ì§€ì—­ë³€ìˆ˜
+		int lv=0; //Áö¿ªº¯¼ö
 	
 	}
 

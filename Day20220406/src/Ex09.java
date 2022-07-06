@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Ex09 {
 
 	public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		String str = sc.nextLine();
+		
 		
 		if(str.equals("yes"))
 			System.out.println("정답입니다.");
@@ -15,6 +16,7 @@ public class Ex09 {
 //			System.out.println("정답입니다.");
 		
 		sc.close();
+		
 	}
 
 }

@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Ex11 {
 
 	public static void main(String[] args) {
+		
 		System.out.print("점수를 입력해주세요.>");
 		
 		Scanner sc = new Scanner(System.in);
@@ -30,5 +31,4 @@ public class Ex11 {
 			
 		sc.close();
 	}
-
 }

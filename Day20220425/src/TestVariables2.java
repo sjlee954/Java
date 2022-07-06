@@ -3,25 +3,25 @@ public class TestVariables2 {
 
 	public static void main(String[] args) {
 		System.out.println(Variables2.cv);
-		 //í´ë˜ìŠ¤ ë³€ìˆ˜ëŠ” ê°ì²´ ìƒì„±í•˜ì§€ ì•Šê³  ì ‘ê·¼ ê°€ëŠ¥. >>ì´ìœ ëŠ” ê°ì²´ìƒì„± ì „ì— ë©”ëª¨ë¦¬ ê³µê°„ì— ì˜¬ë¼ê°€ìˆìŒ.
+		 //Å¬·¡½º º¯¼ö´Â °´Ã¼ »ı¼ºÇÏÁö ¾Ê°í Á¢±Ù °¡´É. >>ÀÌÀ¯´Â °´Ã¼»ı¼º Àü¿¡ ¸Ş¸ğ¸® °ø°£¿¡ ¿Ã¶ó°¡ÀÖÀ½.
 		
 		Variables2 var2 = new Variables2();
-		var2.method(); //ê°ì²´ ìƒì„± í›„ ë©”ì†Œë“œ ì ‘ê·¼ ê°€ëŠ¥.
+		var2.method(); //°´Ã¼ »ı¼º ÈÄ ¸Ş¼Òµå Á¢±Ù °¡´É.
 		
 		Variables2.method2();
 	}
 }
 
 class Variables2 {
-	int iv; //ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜, ë©¤ë²„ë³€ìˆ˜
-	static int cv=100; //í´ë˜ìŠ¤ë³€ìˆ˜, ì •ì ë³€ìˆ˜, ê³µìœ ë³€ìˆ˜
+	int iv; //ÀÎ½ºÅÏ½º º¯¼ö, ¸â¹öº¯¼ö
+	static int cv=100; //Å¬·¡½ºº¯¼ö, Á¤Àûº¯¼ö, °øÀ¯º¯¼ö
 	
 	void method() {
-		int lv=0; //ì§€ì—­ë³€ìˆ˜
+		int lv=0; //Áö¿ªº¯¼ö
 	
 	}
 	static void method2() {
-		int lv=0; //ì§€ì—­ë³€ìˆ˜
+		int lv=0; //Áö¿ªº¯¼ö
 		System.out.println("lv : "+lv);
 	
 	}

@@ -1,7 +1,7 @@
 
-public class Ex02 {
-
-	public static void main(String[] args) {
+//public class Ex02 {
+//
+//	public static void main(String[] args) {
 //		byte b = 10;
 //		char ch = 'A';
 //		int i = 100;
@@ -16,6 +16,3 @@ public class Ex02 {
 //	}
 //
 //}
-	}
-
-}

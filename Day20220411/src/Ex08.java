@@ -12,6 +12,6 @@ public class Ex08 {
 			sum += i;
 		}
 		System.out.println("회전횟수: "+i+","+"sum: "+sum);
-	}
+	}//main의 끝
 
 }

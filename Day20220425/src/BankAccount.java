@@ -1,10 +1,10 @@
 
-public class BankAccount {//í´ë˜ìŠ¤ --> í´ë˜ìŠ¤ ì„¤ê³„ëŠ” ì¶”ìƒí™”ê°œë…
-	private int balance; //ì”ì•¡ ë©¤ë²„ë³€ìˆ˜,ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜, ì›ì¹™ : ë³€ìˆ˜ëŠ” ì™¸ë¶€ì—ì„œ ì§ì ‘ ì ‘ê·¼ì„ ê¸ˆì§€
-	                                     //ì •ë³´ì€ë‹‰ ëª©ì  ì¤‘ í•˜ë‚˜ê°€ ë¬´ê²°ì„±
-	private int sum; //ë³€ìˆ˜ëª… ì²«ê¸€ìë§Œ ëŒ€ë¬¸ìë¡œ ë°”ê¿”ì„œ ë¶™ì„ 8ë²ˆì¤„
+public class BankAccount {//Å¬·¡½º --> Å¬·¡½º ¼³°è´Â Ãß»óÈ­°³³ä
+	private int balance; //ÀÜ¾× ¸â¹öº¯¼ö,ÀÎ½ºÅÏ½ºº¯¼ö, ¿øÄ¢ : º¯¼ö´Â ¿ÜºÎ¿¡¼­ Á÷Á¢ Á¢±ÙÀ» ±İÁö
+	                                     //Á¤º¸Àº´Ğ ¸ñÀû Áß ÇÏ³ª°¡ ¹«°á¼º
+	private int sum; //º¯¼ö¸í Ã¹±ÛÀÚ¸¸ ´ë¹®ÀÚ·Î ¹Ù²ã¼­ ºÙÀÓ 8¹øÁÙ
 	
-	//getter, setter ==> get ê°’ ì¶œë ¥, set ê°‘ ì…ë ¥
+	//getter, setter ==> get °ª Ãâ·Â, set °© ÀÔ·Â
 //	public int getSum() {
 //		return sum;
 //	}
@@ -12,28 +12,28 @@ public class BankAccount {//í´ë˜ìŠ¤ --> í´ë˜ìŠ¤ ì„¤ê³„ëŠ” ì¶”ìƒí™”ê°œë…
 //		this.sum = sum;
 //	}
 	
-	int deposit(int amount) { //ì…ê¸ˆ
+	int deposit(int amount) { //ÀÔ±İ
 		balance += amount;
 		return balance;
 		
 	}
-	int withdraw(int amount) { //ì¶œê¸ˆ
+	int withdraw(int amount) { //Ãâ±İ
 		 balance -= amount;
 		 return balance;
 		 
 	}
 	
-	void checkBanance() { //ì”ê³  í™•ì¸
-		System.out.println("ì”ì•¡ : "+balance);
+	void checkBanance() { //ÀÜ°í È®ÀÎ
+		System.out.println("ÀÜ¾× : "+balance);
 	}
 	
 }
 
 class MainClass {
 	public static void main(String[] args) {
-		//ì•„ë˜ í™”ë©´ì²˜ëŸ¼ ì¶œë ¥í•˜ê¸° ìœ„í•œ ë¬¸ì¥ì„ ê¸°ìˆ 
-		//System.out.println(); -->ë¬¸ì¥ì‚¬ìš© ê¸ˆì§€
-		BankAccount kim = new BankAccount(); //ìƒì„±ì í˜¸ì¶œ --> í˜„ì¬ëŠ” ë””í´íŠ¸ ìƒì„±ìí˜¸ì¶œë¨.
+		//¾Æ·¡ È­¸éÃ³·³ Ãâ·ÂÇÏ±â À§ÇÑ ¹®ÀåÀ» ±â¼ú
+		//System.out.println(); -->¹®Àå»ç¿ë ±İÁö
+		BankAccount kim = new BankAccount(); //»ı¼ºÀÚ È£Ãâ --> ÇöÀç´Â µğÆúÆ® »ı¼ºÀÚÈ£ÃâµÊ.
 		kim.deposit(10000);
 		kim.checkBanance();
 		kim.withdraw(3000);
@@ -55,5 +55,5 @@ class MainClass {
 	}
 }
 
-//ì”ì•¡ 10000
-//ì”ì•¡ 7000
+//ÀÜ¾× 10000
+//ÀÜ¾× 7000

@@ -1,5 +1,5 @@
 
-public class Ex13 {
+public class Ex13 { //p.178 4-32
 
 	public static void main(String[] args) {
 		//for문에 Loop1이라는 이름을 붙였다.

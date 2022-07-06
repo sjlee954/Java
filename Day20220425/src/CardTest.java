@@ -2,7 +2,7 @@
 public class CardTest {
 
 	public static void main(String[] args) {
-		System.out.println("Card.width= "+ Card.width); //í´ë˜ìŠ¤ë³€ìˆ˜
+		System.out.println("Card.width= "+ Card.width); //Å¬·¡½ºº¯¼ö
 		System.out.println("Card.height= "+ Card.height);
 		 
 		Card c1 = new Card();
@@ -13,14 +13,14 @@ public class CardTest {
 		c2.kind = "Spade";
 		c2.number = 4;
 		
-		System.out.println("c1ì€"+c1.kind+","+c1.number+"ì´ë©°, í¬ê¸°ëŠ” (" + c1.width + "," + c1.height + ")");
-		System.out.println("c2ì€"+c2.kind+","+c2.number+"ì´ë©°, í¬ê¸°ëŠ” (" + c2.width + "," + c2.height + ")");
-		System.out.println("c1ì˜ widthì™€ heightë¥¼ ê°ê° 50,80ìœ¼ë¡œ ë³€ê²½í•©ë‹ˆë‹¤.");
+		System.out.println("c1Àº"+c1.kind+","+c1.number+"ÀÌ¸ç, Å©±â´Â (" + c1.width + "," + c1.height + ")");
+		System.out.println("c2Àº"+c2.kind+","+c2.number+"ÀÌ¸ç, Å©±â´Â (" + c2.width + "," + c2.height + ")");
+		System.out.println("c1ÀÇ width¿Í height¸¦ °¢°¢ 50,80À¸·Î º¯°æÇÕ´Ï´Ù.");
 		
-		c1.width = 50;
-		c1.height = 80;
-		System.out.println("c1ì€"+c1.kind+","+c1.number+"ì´ë©°, í¬ê¸°ëŠ” (" + c1.width + "," + c1.height + ")");
-		System.out.println("c2ì€"+c2.kind+","+c2.number+"ì´ë©°, í¬ê¸°ëŠ” (" + c2.width + "," + c2.height + ")");
+//		c1.width = 50;
+//		c1.height = 80;
+		System.out.println("c1Àº"+c1.kind+","+c1.number+"ÀÌ¸ç, Å©±â´Â (" + c1.width + "," + c1.height + ")");
+		System.out.println("c2Àº"+c2.kind+","+c2.number+"ÀÌ¸ç, Å©±â´Â (" + c2.width + "," + c2.height + ")");
 		
 		
 	}
@@ -30,6 +30,6 @@ public class CardTest {
 class Card {
 	String kind;
 	int number;
-	static int width = 100;
-	static int height = 250;
+	final static int width = 100;
+	final static int height = 250;
 }

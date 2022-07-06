@@ -2,13 +2,13 @@
 class OverloadingTest {
 	public static void main(String[] args) {
 		MyMath3 mm = new MyMath3();
-		System.out.println("mm.add(3,3)ê²°ê³¼: "+mm.add(3,3));
-		System.out.println("mm.add(3L,3)ê²°ê³¼: "+mm.add(3L,3));
-		System.out.println("mm.add(3,3L)ê²°ê³¼: "+mm.add(3,3L));
-		System.out.println("mm.add(3L,3L)ê²°ê³¼: "+mm.add(3L,3L));
+		System.out.println("mm.add(3,3)°á°ú: "+mm.add(3,3));
+		System.out.println("mm.add(3L,3)°á°ú: "+mm.add(3L,3));
+		System.out.println("mm.add(3,3L)°á°ú: "+mm.add(3,3L));
+		System.out.println("mm.add(3L,3L)°á°ú: "+mm.add(3L,3L));
 		
 		int[] a = {100,200,300};
-		System.out.println("mm.add(a)ê²°ê³¼: "+mm.add(a));
+		System.out.println("mm.add(a)°á°ú: "+mm.add(a));
 		
 		
 	}

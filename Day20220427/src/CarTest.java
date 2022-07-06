@@ -22,7 +22,7 @@ public class CarTest {
 }
 
 
-class Car3 { //ì°¨ìƒìœ„í´ë˜ìŠ¤ 
+class Car3 { //Â÷»óÀ§Å¬·¡½º 
 	int passenger;
 	int tire;
 	int seat;
@@ -30,24 +30,24 @@ class Car3 { //ì°¨ìƒìœ„í´ë˜ìŠ¤
 		this.passenger = passenger;
 		this.tire = tire;
 		this.seat = seat;
-		System.out.println("Car() ìƒì„±ì");
+		System.out.println("Car() »ı¼ºÀÚ");
 	}
-	public Car3() {} //ë””í´íŠ¸ìƒì„±ì
+	public Car3() {} //µğÆúÆ®»ı¼ºÀÚ
 	
 	void run() {}
 	void stop() {}
 }
 
-class Sedan extends Car3 { //í´ë˜ìŠ¤ Car3ë¥¼ ìƒì†ë°›ì€ í´ë˜ìŠ¤ Sedan.
+class Sedan extends Car3 { //Å¬·¡½º Car3¸¦ »ó¼Ó¹ŞÀº Å¬·¡½º Sedan.
 	String color;
-	public Sedan() {} //ì„¸ë‹¨ì˜ ë””í´íŠ¸ìƒì„±ì
+	public Sedan() {} //¼¼´ÜÀÇ µğÆúÆ®»ı¼ºÀÚ
 	public Sedan(int passenger, int tire,String color) {
-		super(passenger,tire,4); //super : ìì‹í´ë˜ìŠ¤ì—ì„œ ìƒì†ë°›ì€ ë¶€ëª¨í´ë˜ìŠ¤ì˜ ë©¤ë²„ë³€ìˆ˜ë¥¼ ìƒì„±í• ë•Œ ì‚¬ìš©.
-								 //ìƒìœ„í´ë˜ìŠ¤ ìƒì„±ì í˜¸ì¶œ , ì²«ë²ˆì§¸ ì¤„ì— ìˆì–´ì•¼í•¨.
+		super(passenger,tire,4); //super : ÀÚ½ÄÅ¬·¡½º¿¡¼­ »ó¼Ó¹ŞÀº ºÎ¸ğÅ¬·¡½ºÀÇ ¸â¹öº¯¼ö¸¦ »ı¼ºÇÒ¶§ »ç¿ë.
+								 //»óÀ§Å¬·¡½º »ı¼ºÀÚ È£Ãâ , Ã¹¹øÂ° ÁÙ¿¡ ÀÖ¾î¾ßÇÔ.
 		this.color = color;        
 //		this.passenger = passenger;
 //		this.tire = tire;
-		System.out.println("Sedan()ìƒì„±ì");
+		System.out.println("Sedan()»ı¼ºÀÚ");
 		}
 	public Sedan(int passenger, int tire, int seat, String color) {
 		super(passenger,tire,seat);
@@ -58,7 +58,7 @@ class Sedan extends Car3 { //í´ë˜ìŠ¤ Car3ë¥¼ ìƒì†ë°›ì€ í´ë˜ìŠ¤ Sedan.
 class Sports extends Sedan {
 	
 	int sports; 
-	public Sports() {} //ë””í´íŠ¸ìƒì„±ì
+	public Sports() {} //µğÆúÆ®»ı¼ºÀÚ
 	
 	public Sports(int passenger, int tire, int seat,String color,int sports) {
 		super(passenger,tire,seat,color);
@@ -74,4 +74,3 @@ class Truck extends Car3 {
 	void objectLoad() {}
 	
 }
-

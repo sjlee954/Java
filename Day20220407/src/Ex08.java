@@ -1,8 +1,7 @@
 
-public class Ex08 {
+public class Ex08 {  //djfudnjdjdjdjjjjjjj
 
 	public static void main(String[] args) {
-
 		char ch = 'z'; //'z'=122
 		
 		System.out.println((int)(ch));

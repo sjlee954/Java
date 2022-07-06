@@ -2,11 +2,19 @@
 public class Ex06 {
 
 	public static void main(String[] args) {
-		System.out.println("i \t 2*i \t 2i*-1 \t i*i \t 11-i \t i%3 \t i/3");
-		System.out.println("---------------------------------------------------");
+		int sum = 0;
 		
-		for(int i=1;i<=10;i++)
-			System.out.printf("%d \t %d \t %d \t %d \t %d \t %d \t %d%n", i, 2*i, 2*i-1, i*i, 11-i, i%3, i/3);
-	}
+		for(int i=1; i<10; i++) {
+			sum += i; //sum = sum + i;
+			System.out.printf("1부터 %2d까지의 합: %2d%n", i, sum);
+		}
+		
+		System.out.println("-------------------");
+		sum = 0;
+		for (int i = 1; i<=100; i+=5) {
+			sum += i;
+			System.out.println("1부터"+ i +" 까지의 합: "+sum );
+		}
+	} //main의 끝
 
 }

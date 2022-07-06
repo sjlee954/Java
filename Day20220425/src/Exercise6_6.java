@@ -9,8 +9,8 @@ class Exercise6_6 {
 		System.out.println("---------------------");
 		
 		Student3 s2 = new Student3();
-//		System.out.println("총점 : " + s2.getTotal());
-//		System.out.println("평균 : " + s2.getAverage());
+//		System.out.println("���� : " + s2.getTotal());
+//		System.out.println("��� : " + s2.getAverage());
 		
 		System.out.println("----------------------");
 		
@@ -18,11 +18,11 @@ class Exercise6_6 {
 		
 		s3.getAverage();
 		String name = s3.getName();
-		s3.setName("홍길동");
+		s3.setName("ȫ�浿");
 		System.out.println(s3.getName());
 		s3.setKor(90);
-		int kor = s3.getKor(); //둘다 가능
-		System.out.println(s3.getKor()); //둘다 가능
+		int kor = s3.getKor(); //�Ѵ� ����
+		System.out.println(s3.getKor()); //�Ѵ� ����
 		s3.setBan(5);
 		System.out.println(s3.getBan());
 		
@@ -32,7 +32,7 @@ class Exercise6_6 {
 
 //private < default < protected < public
 
-@Getter //@ ==> 어노테이션
+@Getter //@ ==> ������̼�
 @Setter
 class Student3 {
 	

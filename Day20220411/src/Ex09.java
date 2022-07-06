@@ -1,5 +1,5 @@
 
-public class Ex09 {
+public class Ex09 { //È¦¼öÀÇ ÇÕ
 
 	public static void main(String[] args) {
 		int sum = 0;
@@ -12,6 +12,7 @@ public class Ex09 {
 			sum += i;
 		}
 		System.out.println("È¸ÀüÈ½¼ö: "+i+","+"sum: "+sum);
+
 	}
 
 }

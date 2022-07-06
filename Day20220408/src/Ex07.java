@@ -1,14 +1,12 @@
 
-public class Ex07 { //1부터 20까지의 정수 중에서 2의 배수가 아니면서 3의 배수가 아닌 수의 총합을 구하시오.
+public class Ex07 {
 
 	public static void main(String[] args) {
-		int sum = 0;
+		System.out.println("i \t 2*i \t 2i*-1 \t i*i \t 11-i \t i%3 \t i/3");
+		System.out.println("----------------------------------------------");
 		
-		for(int i=1;i<20;i++) {
-			if(i%2!=0 && i%3 !=0)
-			sum += i;
-		}
-		System.out.println("sum : "+sum);
+		for(int i=1;i<=10;i++)
+			System.out.printf("%d \t %d \t %d \t %d \t %d \t %d \t %d%n", i, 2*i, 2*i-1, i*i, 11-i, i%3, i/3);
 	}
 
 }

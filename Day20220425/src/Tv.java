@@ -14,16 +14,16 @@ public class Tv {
 	public static void main(String[] args) {
 		Tv t1 = new Tv();
 		Tv t2 = new Tv();
-		System.out.println("t1ì˜ ì±„ë„ì€"+t1.channel +"ì…ë‹ˆë‹¤.");
-		System.out.println("t2ì˜ ì±„ë„ì€"+t2.channel +"ì…ë‹ˆë‹¤.");
+		System.out.println("t1ÀÇ Ã¤³ÎÀº"+t1.channel +"ÀÔ´Ï´Ù.");
+		System.out.println("t2ÀÇ Ã¤³ÎÀº"+t2.channel +"ÀÔ´Ï´Ù.");
 		
 		t2 = t1;
 		t1.channel =7;
 
 		
-		System.out.println("t1ì˜ ì±„ë„ì„ 7ë¡œ ë³€ê²½í•˜ì˜€ìŠµë‹ˆë‹¤.");
-		System.out.println("t1ì˜ ì±„ë„ì€"+t1.channel +"ì…ë‹ˆë‹¤.");
-		System.out.println("t2ì˜ ì±„ë„ì€"+t2.channel +"ì…ë‹ˆë‹¤.");
+		System.out.println("t1ÀÇ Ã¤³ÎÀ» 7·Î º¯°æÇÏ¿´½À´Ï´Ù.");
+		System.out.println("t1ÀÇ Ã¤³ÎÀº"+t1.channel +"ÀÔ´Ï´Ù.");
+		System.out.println("t2ÀÇ Ã¤³ÎÀº"+t2.channel +"ÀÔ´Ï´Ù.");
 	}
 
 }

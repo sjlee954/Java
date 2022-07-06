@@ -1,14 +1,29 @@
+import java.util.Scanner;
 
 public class Ex04 {
 
 	public static void main(String[] args) {
-		for(int i=1;i<=5;i++)
-			System.out.println(i); //i의 값을 출력한다.
-		
-		for(int i=1;i<=5;i++)
-			System.out.print(i); //print()를 쓰면 가로로 출력된다.
 	
-		System.out.println();
-	}
+		System.out.print("당신의 주민번호를 입력하세요.(011231-1111222)>");
+		Scanner scanner = new Scanner(System.in);
+		String regNo = scanner.nextLine();
+		
+		char gender = regNo.charAt(7);
+		
+		switch(gender) {
+			case '1' : case '3' :
+				System.out.println("당신은 남자입니다.");
+				break;
+			case '2' : case '4' :
+				System.out.println("당신은 여자입니다");
+				break;
+			default : 
+				System.out.println("유효하지 않은 주민등록번호입니다.");
+			
+		} // switch end
+		
+		scanner.close();
+		
+	}// main의 끝
 
 }

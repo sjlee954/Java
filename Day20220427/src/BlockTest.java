@@ -1,6 +1,5 @@
 
-public class BlockTest {
-
+class BlockTest {
 	static {
 		System.out.println("static { }");
 	}
@@ -8,7 +7,7 @@ public class BlockTest {
 		System.out.println("{ }");
 	}
 	public BlockTest() {
-		System.out.println("ìƒì„±ì");
+		System.out.println("»ı¼ºÀÚ");
 	}
 	
 	public static void main(String[] args) {

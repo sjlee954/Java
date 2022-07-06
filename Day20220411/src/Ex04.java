@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex04 {//숫자 5개를 순차적으로 입력해서 다 더한 값 
+public class Ex04 { //숫자 5개를 순차적으로 입력해서 다 더한 값 
 
 	public static void main(String[] args) {
 		int sum = 0; //누적용

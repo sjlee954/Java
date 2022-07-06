@@ -1,15 +1,13 @@
 
-public class Ex10 {
+public class Ex10 { //랜덤 숫자 6개 뽑기 (겹칠 수있음.)->배열사용해야 함 추후에 배열때 다시 배움.
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
-		for(int i=2; i<10; i++) { //행,줄
-			for(int j=1; j<10; j++) //열,칸
-//				System.out.printf("%d*%d:"+(int)i*j+'\t', i,j);
-			System.out.println(i+"*"+j+"="+ i*j);
-			
-			System.out.println();//줄바꿈
-		}
+		int value = 0;
+		
+		for(int i=0;i<6;i++)
+			System.out.println((int)(Math.random()*45)+1);
+		
 	}
 
 }

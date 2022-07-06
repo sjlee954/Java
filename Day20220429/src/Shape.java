@@ -10,7 +10,7 @@ abstract class Shape {
 		this.p = p;
 	}
 	
-	abstract double calcArea(); //ë„í˜•ì˜ ë©´ì ì„ ê³„ì‚°í•´ì„œ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
+	abstract double calcArea(); //µµÇüÀÇ ¸éÀûÀ» °è»êÇØ¼­ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
 	
 	Point getPosition() {
 		return p;
@@ -24,11 +24,11 @@ abstract class Shape {
 class Circle extends Shape {
 	double r;
 	
-	public Circle() {} //ë””í´íŠ¸ ìƒì„±ì
+	public Circle() {} //µğÆúÆ® »ı¼ºÀÚ
     
 	//Shape s3 = new Circle(5);
 	public Circle(double r) {
-//		super(new Point(0,0)); êµ³ì´x
+//		super(new Point(0,0)); ±»ÀÌx
 		this.r =r;
 	} 
 	
@@ -42,7 +42,7 @@ class Circle extends Shape {
 	double calcArea() {
 		double result = r*r*Math.PI; 
 		return result;
-		//return Math.PI*r*r; ì´ë ‡ê²Œ í•´ë„ë¨.!
+		//return Math.PI*r*r; ÀÌ·¸°Ô ÇØµµµÊ.!
 	}
 	
 }
@@ -52,7 +52,7 @@ class Rectangle extends Shape {
 	
 	public Rectangle() {
 		this(new Point(0,0),0,0);
-	} //ë””í´íŠ¸ìƒì„±ì
+	} //µğÆúÆ®»ı¼ºÀÚ
 	
 	public Rectangle(double width, double height) {
 //		this.width = width;
@@ -86,11 +86,11 @@ class Point {
 	int x;
 	int y;
 	
-	Point() { //ë””í´íŠ¸ ìƒì„±ì
+	Point() { //µğÆúÆ® »ı¼ºÀÚ
 		this(0,0);
 	}
 	
-	Point(int x, int y) { //ë§¤ê°œë³€ìˆ˜ ìˆëŠ” ìƒì„±ì
+	Point(int x, int y) { //¸Å°³º¯¼ö ÀÖ´Â »ı¼ºÀÚ
 		this.x = x;
 		this.y= y;
 	}
@@ -111,3 +111,4 @@ class Point {
 		System.out.println(r3.calcArea());
 	}
 }
+

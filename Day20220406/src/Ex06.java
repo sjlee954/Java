@@ -19,7 +19,7 @@ public class Ex06 {
 			
 //		if (num == 0)
 //			System.out.println("¿µ");
-//		
+		
 //		if (num < 0)
 //			System.out.println("À½¼ö");
 		

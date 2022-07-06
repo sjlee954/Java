@@ -5,7 +5,7 @@ import lombok.ToString;
 class Exercise6_9 {
 	public static void main(String[] args) {
 		
-		Student11 s = new Student11("홍길동",1,1,100,60,76);
+		Student11 s = new Student11("ȫ�浿",1,1,100,60,76);
 		
 		System.out.println(s.info());
 		System.out.println(s.toString());
