@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+
+<mapper namespace="com.oe.mapper.MarketBoardMapper">
+    <select id="getListBoard" resultType="com.oe.domain.MarketBoardVO">
+        select * from marketboard where no > 0 <!-- order by no desc -->
+    </select>
+ 
+  	<insert id="insert">
+        insert into marketboard(bo_num, bo_id, bo_title, bo_nickname, bo_price, bo_content, bo_image1, bo_image2, bo_image3, bo_count, bo_heart, bo_heartcount, bo_category, bo_address1,bo_address2)
+        values(seq_marketboard.nextval, #{bo_id, jdbcType=VARCHAR}, #{bo_title, jdbcType=VARCHAR}, #{bo_nickname, jdbcType=VARCHAR}, #{bo_price, jdbcType=VARCHAR}, #{bo_content, jdbcType=VARCHAR}, #{bo_image1, jdbcType=VARCHAR}, #{bo_image2, jdbcType=VARCHAR}, #{bo_image3, jdbcType=VARCHAR}, #{bo_count, jdbcType=VARCHAR}, #{bo_heart, jdbcType=VARCHAR}, #{bo_heartcount, jdbcType=VARCHAR}, #{bo_category, jdbcType=VARCHAR}, #{bo_address1, jdbcType=VARCHAR}, #{bo_address2, jdbcType=VARCHAR})
+    </insert>
+
+</mapper>

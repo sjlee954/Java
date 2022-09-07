@@ -1,0 +1,1 @@
+<footer>Copyright (C) 2018 정보처리산업기사 All Right Reserved</footer>

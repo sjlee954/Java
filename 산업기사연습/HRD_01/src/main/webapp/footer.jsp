@@ -1,0 +1,1 @@
+<footer>HRDKOREA Copyrightsⓒ2022 All rights reserved Human Resource Development Service of Korea</footer>

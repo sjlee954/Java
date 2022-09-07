@@ -1,0 +1,28 @@
+package com.oe.domain;
+
+import lombok.Data;
+
+/*
+--마이페이지
+CREATE TABLE MYPAGE(
+   my_name VARCHAR2(30),
+   my_id VARCHAR2(30),
+   my_image VARCHAR2(500),
+   my_intro VARCHAR2(1500),
+   my_nickname VARCHAR2(30) UNIQUE,
+   wd_reason_pre VARCHAR2(300), --go to WITHDRAWAL
+   wd_remark_pre VARCHAR2(1500), --go to WITHDRAWAL
+   CONSTRAINT fk_my_id FOREIGN KEY (my_id) REFERENCES MARKETUSER (us_id)
+   ON DELETE CASCADE
+);
+*/
+
+@Data
+public class MyPageVO {
+	private String my_id;
+	private String my_image;
+	private String my_intro;
+	private String my_nickname;
+	private String wd_reason_pre;
+	private String wd_remark_pre;
+}
